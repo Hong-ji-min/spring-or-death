@@ -40,7 +40,7 @@ public class ProfileUploadService {
                 String originalFilename = multipartFile.getOriginalFilename();
 //                String dir = "profile/"; profile 폴더는 사용하지 않음
                 String renamedFileName = getRenamedFileName(originalFilename);
-                String url = "http://ssg-java3.iptime.org/myftp/" + renamedFileName; 
+                String url = "http://ssg-java3.iptime.org/myftp/" + renamedFileName;
 
                 // 실제 파일 전송
                 boolean profileUpload = ftpClient.storeFile(renamedFileName, inputStream);
